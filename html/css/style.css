@@ -53,7 +53,11 @@ header, nav, section, article, aside, footer {display: block;}
 
 
 .wrapper {width: 954px; margin: 0 auto; padding-bottom: 165px;}
-header {padding: 15px 0 0 0;}
+header {
+  padding: 15px 0 0 0; 
+  position: relative;
+  z-index: 10;
+}
 .head-inner {background: url(../img/head-inner-bg.jpg) no-repeat; height: 295px; position: relative;}
 .logo {position: absolute; top: 19px; left: 26px;}
 .phone {font-family: "DINCondensedC"; position: absolute; right: 47px; top: 223px;}
@@ -141,28 +145,39 @@ a.archiv-news {background: url(../img/archiv-news-bg.png) 0 3px no-repeat; paddi
 .inner {padding: 1px 0 0 15px;}
 .inner h3 {color: #c22113; padding: 6px 0 3px 0;}
 .inner p {text-align: justify;}
-.ser-list {list-style: none; padding: 0 0 0 3px;}
-.ser-list li {float: left;}
-.ser-list li a {font-weight: bold;}
-.ser-list li .pic img {position: relative;}
-.ser-list li.li-01 {width: 213px;}
-.ser-list li.li-01 .pic img {left: -10px; top: 13px;}
-.ser-list li.li-02 {width: 225px;}
-.ser-list li.li-02 .pic img {left: -11px; top: 17px;}
-.ser-list li.li-03 {width: 225px;}
-.ser-list li.li-03 .pic img {left: -2px; top: 17px;}
-.ser-list li.li-04 {width: 213px;}
-.ser-list li.li-04 .pic img {left: 14px; top: 13px;}
-.ser-list li.li-05 {width: 225px;}
-.ser-list li.li-05 .pic {padding-bottom: 29px;}
-.ser-list li.li-05 .pic img {left: 7px; top: 24px;}
-.ser-list li.li-06 {width: 225px;}
-.ser-list li.li-06 .pic {padding-bottom: 10px;}
-.ser-list li.li-06 .pic img {top: 16px;}
+.ser-list {
+  list-style: none;
+  text-align: center;
+  padding: 25px 0 0 0;
+}
+.ser-list li {
+  display: inline-block; 
+  vertical-align: top;
+  margin: 0 11px 25px 15px;
+}
+.ser-list li a {
+  font-weight: bold;
+  text-align: center;
+}
+.ser-list li .pic img {
+  position: relative;
+  margin: 0 auto;
+}
+.ser-list li {
+  width: 174px;
+}
+.ser-list li a {
+  line-height: 1.4;
+}
+.ser-list li p {
+  text-align: center;
+}
+
+
 
 /* inner */
 .container {position: relative;}
-.patway {position: absolute; left: 0; top: -23px;}
+.patway {position: absolute; left: 0; top: -18px;}
 .patway li {color: #9a9ca0; font-size: 12px; list-style: none; display: inline;}
 .patway li a {color: #9a9ca0; text-decoration: none;}
 .patway li a:hover {text-decoration: underline;}
